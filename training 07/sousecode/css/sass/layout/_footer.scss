@@ -1,0 +1,32 @@
+/*======================================
+        Footer
+======================================*/
+
+.footer-content {
+	padding: 0 0;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+	.maps {
+		padding: 25px 0 0 0 ;
+	}
+}
+.copyright {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.footer-bot {
+	display: inline-flex;
+	border-top: 1px solid #000;
+	a {
+		border-left: 1px solid #000;
+		&:first-child(){
+			border: 0;
+		}
+		
+	}
+}

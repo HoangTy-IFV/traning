@@ -1,0 +1,59 @@
+/*------------------- Wraper -------------------*/
+.wrapper {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row_clear {
+    @extend %clearfix;
+}
+.container { 
+    @extend %clearfix;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 percentage(30 / 640);
+}
+.image-center {
+    text-align: center;
+}
+
+.read-more {
+	text-align: center;
+}
+.btn {
+	display: inline-block;
+	text-align: center;
+	&-read {
+		width: 36px;
+		height: 36px;
+		background: url('../images/btn-right.png') no-repeat;
+		background-size: cover;
+	}
+	&-read-more {
+		width: 136px;
+		height: 45px;
+		margin-bottom: 35px;
+		&.btn-white {
+			background: url('../images/btn-read-more.png') no-repeat;
+			background-size: cover;
+		}
+		&.btn-black{
+			background: url('../images/btn-black.png') no-repeat;
+			background-size: cover;
+			margin-bottom: 65px;
+			transition: all 0.3s;
+			&:hover {
+				background: #8fd3df url('../images/btn-black.png') no-repeat;
+				background-size: cover;
+
+			}
+		}
+	}
+	&.btn-more {
+		width: 60px;
+		height: 35px;
+		background: url('../images/btn-more.jpg') no-repeat;
+		background-size: cover;
+	}
+} 

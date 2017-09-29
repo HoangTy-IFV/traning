@@ -1,0 +1,87 @@
+/*======================================
+        Header
+======================================*/
+.header {
+	position: relative;
+}
+.main-menu {
+	padding: 30px 3%;
+	@extend %clearfix;
+	width: 100%;
+	background: #97ccda;
+	color: #fff;
+	text-align: center;
+	transition: all 0.4s;
+	&.menu-top{
+		position: absolute;
+		top: 100%;
+		left: 100%;
+		z-index: 1000;
+		height: 10000%;
+		}
+		&.active {
+			left: 0;
+		}
+	}
+	li {
+		border-bottom: 2px solid #fff;
+		font-size: 15px;
+		line-height: 1.4;
+		&:first-child{
+			border-top: 2px solid #fff;
+		}
+		a{
+			display: block;
+			padding: 12px 0;
+			&:hover{
+				background: #77E4E5;
+			}
+		}
+	
+}
+.menu {
+	.ic-menu {
+		position: absolute;
+		top: percentage(21 / 113);
+		right: 3%;
+		cursor: pointer; 
+		display: block;
+		width: percentage(138 / $screen);
+		height: percentage(68 / 113);
+		background: url('../images/ic-menu.jpg') no-repeat;
+		background-size: 100% 100%;
+		transition: all 0.3s;
+		&.active{
+			background: url('../images/ic-menu-close.jpg') no-repeat;
+			background-size: 100% 100%;
+		}
+	}
+
+}
+
+.menu-img {
+	border-bottom: 0;
+	padding: 33px 0 0 0 ;
+
+	@extend %clearfix; 
+	a {
+		padding: 0;
+		width: 48%;
+		float: left;
+		text-align: left;
+		margin-bottom: 15px;
+		&:hover {
+			background: none;
+		}
+		img {
+			width: 100%;
+		}
+		&:nth-child(2n + 1) {
+			margin-right: 4%;
+		}
+		&:last-child {
+			width: 100%;
+			padding: 0;
+		}
+	}
+}
