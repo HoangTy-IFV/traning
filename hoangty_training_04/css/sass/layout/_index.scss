@@ -1,0 +1,219 @@
+/*======================================
+        section-home01
+======================================*/
+
+.home_01{
+	position: relative;
+	z-index: 100;
+	background: url('../images/bg-slider.png') no-repeat center bottom; 
+	background-size: cover;
+	height: 593px;
+	display: flex;
+	align-items: center;
+	margin-bottom: -25px;
+	.text-slider{
+		text-align: center;
+	}
+}
+
+/*======================================
+        section-home02
+======================================*/
+.home_02{
+	padding: $section-padding;
+	position: relative;
+	z-index: 10;
+	background: url('../images/bg-intro.jpg')  center;
+	background-size: cover;
+}
+
+.title-intro{
+	padding: 0 60px ;
+	text-align: center;
+	color: $color-a; 
+	h2{
+		margin-bottom: 14px;
+		// &::before{
+		// 	content: '';
+		// 	display: block;
+		// 	width: 75px;
+		// 	height: 25px;
+		// 	border-top: 1px solid $color-a;
+		// 	border-left: 1px solid $color-a;
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// }
+		// &::after{
+		// 	content: '';
+		// 	display: block;
+		// 	width: 75px;
+		// 	height: 25px;
+		// 	border-bottom: 1px solid $color-a;
+		// 	border-right: 1px solid $color-a;
+		// 	position: absolute;
+		// 	bottom: 0;
+		// 	right: 0;
+		// }
+	}
+	p{
+		font-size: 14px;
+		line-height: 30px;
+	}
+}
+
+/*======================================
+        section-home03
+======================================*/
+
+.home_03{
+ 	@extend %bd-top;
+ 	@extend %bd-bottom;
+ 	padding: $section-padding2;
+}
+
+.lst-service {
+	li{
+		width: 25%;
+		float: left;
+		border-right: 1px solid #fff;
+		&:last-child{
+			border: 0;
+		}
+	}
+}
+
+.item-ser{
+	color: $color-a;
+	text-align: center;
+	padding: 0 35px;
+	h3{
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 30px;
+		padding: 0 20px;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		a{
+			width: 100%;
+		}
+	}
+	img{
+		width: 100%;
+	}
+	.btn-read-more{
+		@extend %btn; 
+		font-size: 11px;
+		width: 100%;
+		margin: 15px 0 18px 0;
+	}
+}
+
+
+/*======================================
+        section-home04
+======================================*/
+
+.title-h2{
+	background: url('../images/title-h2.jpg') no-repeat center;
+	background-size: cover;
+	text-align: center;
+	padding: $section-padding;
+}
+
+.question-answer{
+	@extend %bd-top ;
+	@extend %bd-bottom ;
+	padding: 40px 0 36px; 
+	ul{
+		padding: 30px 64px 52px 86px;
+		background: url('../images/bg-lst.jpg') repeat;
+		background-size: 100% auto;
+		h3{
+			position: relative;
+			font-size: 24px;
+			line-height: 30px;
+			padding: 19px 35px 19px 0 ;
+			transition: all 0.3s;
+			&:before{
+				content: ''; 
+				display: block;
+				width: 30px;
+				height: 30px;
+				background: url('../images/question.png') no-repeat;
+				position: absolute;
+				top: 19px;
+				left: -45px;
+			}
+			&:after{
+				display: none;
+				content: '';
+				width: 20px;
+				height: 20px;
+				background: url('../images/ic-question.png') no-repeat -20px 0px;
+				background-size: cover;
+				position: absolute;
+				top: 15px;
+				right: 0;
+				transition: all 0.3s;
+			}
+			&.active{
+				&:after{
+					//background: url('../images/ic-question.png') no-repeat 0px 0px;
+					transform: rotate(135deg);
+					
+				}
+			}
+		}
+		li{
+			margin-bottom: 12px;
+		}
+		.cont-answer{
+			position: relative;
+			@extend %clearfix; 
+			border-radius: 5px;
+			background: #fff;
+			// transition: all 0.3s;
+			padding: 25px 30px;
+			&:before{
+				content: ''; 
+				display: block;
+				width: 30px;
+				height: 30px;
+				background: url('../images/answer.png') no-repeat;
+				position: absolute;
+				top: 0;
+				left: -45px;
+			}
+			p{
+				font-size: 12px;
+				line-height: 24px;
+			}
+			img {
+				margin-left: 20px;
+				float: right;
+				
+			}
+		}
+	}
+}
+
+/*======================================
+        section-home05
+======================================*/
+
+.home_05{
+	padding: 52px 0 50px 0;
+	background: #fff;
+	text-align: center;
+	h4{
+		margin-bottom: 45px;
+	}
+	a{
+		@extend %btn;
+		font-size: 22px;
+		line-height: 60px;
+		padding: 0 20px;
+	}
+}

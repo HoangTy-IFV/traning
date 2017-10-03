@@ -1,0 +1,48 @@
+/*======================================
+        Footer
+======================================*/
+
+.copyright {
+	background: #808080; 
+	color: #fff;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#nav-menu{
+	position: fixed;
+	top: 0;
+	right: -250px;
+	width: 250px;
+	height: 100%;
+	background: #000;
+	transition: all 0.3s;
+	&.active{
+		right: 0;
+	}
+	li{
+		padding: 10px 10px;
+		border-bottom: 1px solid #999999;
+		a{
+			color: #fff;
+			display: block;
+			font-size: 14px;
+			line-height: 22px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			&:before{
+				content: '\f105';
+				display: inline-block;
+				font-family: 'FontAwesome'; 
+				color: #fff; 
+				margin-right: 10px;
+				font-size: 18px;
+				vertical-align: middle; 
+			}
+		}
+		&:hover{
+			background: #676464; 
+		}
+	}
+}

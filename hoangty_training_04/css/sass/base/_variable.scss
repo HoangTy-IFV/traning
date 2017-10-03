@@ -1,0 +1,114 @@
+// **********************************
+//   font-face
+// **********************************
+// @font-face {
+//   font-family: "UTM Alexander";
+//   src: url(asset-path("../fonts/UTM Alexander.ttf"));
+//   font-weight: normal;
+//   font-style: normal;
+// } 
+
+// @font-face {
+//   font-family: "futura-medium";
+//   src: url(asset-path("fonts/futura-medium.eot"));
+//   src: url(asset-path("fonts/futura-medium.woff")) format("woff"),
+//   url(asset-path("assets/fonts/futura-medium.ttf")) format("truetype"),
+//   url(asset-path("fonts/futura-medium.svg")) format("svg");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// **********************************
+//   font-family
+// **********************************
+$font-body: -apple-system, BlinkMacSystemFont,  'Meiryo UI', 'Noto Sans Japanese', "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font-heading: "UTM Alexander", sans-serif;
+$font-awesome: "FontAwesome";
+
+// **********************************
+//   COLOR
+// **********************************
+// Brand Color
+$color-primary: #33445b;
+$color-1: #e3e5eb;
+$color-2: #eff1f4;
+$color-3: #2991b3;
+$color-4: #3e3a39;
+$color-5: #3c4b61;
+$color-6: #e5e5e5;
+$color-7: #efefef;
+
+// Application Color
+$color-a: #ffffff;
+$color-b: #d3145a;
+$color-c: #aaa;
+$color-d: #aaa;
+$color-e: #aaa;
+$color-o: #000;
+
+$section-padding : 60px 0; 
+$section-padding2 : 43px 0 32px 0; 
+
+
+$screen : 640px;
+
+// **********************************
+//   EXTENDS
+// **********************************
+
+%clearfix {
+    &:after {
+        content: "";
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+}
+%pd_container {
+    padding-left: 7.14286%;
+    padding-right: 7.14286%;
+}
+%padding_title {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+%padding_text {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+%duration {
+    transition-duration: 400ms;
+}
+%bd-top {
+    background: url('../images/bdb-header.jpg') no-repeat center top;
+    background-size: 100% 5px;
+}
+%bd-bottom {
+    position: relative;
+    &:after{
+        content: '';
+        display: block;
+        border: 20px solid transparent;
+        border-top: 20px solid #1d6c03;
+        border-bottom: 0;
+        position: absolute;
+        bottom: -20px;
+        left: calc(50% - 20px);
+    }
+}
+
+%btn{
+    color: $color-a; 
+    background: #074425;
+    display: inline-block;
+    line-height: 30px;
+    border-radius: 5px;
+    &:hover{
+        background: #1e9e5d; 
+    }
+}
+
+@media screen and (max-width: 640px) {
+    $section-padding : 30px 0; 
+}

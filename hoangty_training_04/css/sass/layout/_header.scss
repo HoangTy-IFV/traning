@@ -1,0 +1,133 @@
+/*======================================
+        Header
+======================================*/
+ #header{
+ 	position: relative;
+ 	@extend %clearfix;
+ 	&:before{
+ 		content: '';
+ 		display: block;
+ 		height: 5px;
+ 		width: 100%;
+ 		background: url('../images/bdb-header.jpg') no-repeat center;
+ 		background-size: cover;
+ 		position: absolute;
+ 		bottom: 0;
+ 		left: 0; 
+ 	}
+ }
+
+ .logo{
+ 	padding: 18px 0;
+ }
+
+ .th-menu{
+ 	padding: 21px 0;
+ 	.menu-mobile {
+	 	display: none;
+ 		cursor: pointer;
+ 		cursor: pointer;
+ 		width: 30px;
+ 		height: 24px;
+ 		top: calc(50% - 14px);
+ 		right: 15px;
+	 	position: absolute;
+ 		background: url('../images/ic-menu.png') no-repeat;
+ 		background-size: cover;
+ 		span{
+			position: absolute;
+ 		}
+ 		 &.active{
+			span{
+				position: fixed;
+				top: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.4); 
+				z-index: 1000;
+		    }
+ 		}
+ 	}
+ 	ul{
+ 		li{
+ 			float: left;
+ 			padding: 9px 15px;
+ 			border-right: 1px solid #fff;
+ 			a{
+ 				display: block;
+	 			font-size: 12px;
+	 			line-height: 30px;
+	 			padding: 0 15px;
+	 			color: $color-a;
+	 			transition: all 0.3s;
+	 		}
+	 		&:hover{
+		 		a{
+		 			// background: #d7d7d7;
+		 		}
+	 		}
+	 		&:nth-child(n + 3){
+				border-right: 0;
+	 		}
+	 		&.contact{
+	 			padding: 0 0 0 15px;
+	 			a{
+		 			border-radius: 5px;
+		 			overflow: hidden;
+	 				padding: 0 0 0 0;
+	 			}
+	 		}
+ 		}
+ 	}
+ }
+
+
+#nav-menu{
+	position: fixed;
+	top: 0;
+	padding: 0 15px;
+	right: -55%;
+	width: 55%;
+	height: 100%;
+	background: #F2F2F2;
+	transition: all 0.3s;
+	z-index: 2000;
+	&.active{
+		right: 0;
+	}
+	li{
+		padding: 5px 10px;
+		border-bottom: 1px solid #999999;
+		transition: all 0.3s;
+		a{	
+			position: relative;
+			color: #000;
+			display: block;
+			font-size: 14px;
+			line-height: 25px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			padding-right: 30px;
+			&:after{
+				content: '';
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				background: url('../images/ic-lst-menu.png') no-repeat; 
+				background-size: 100% 100%;
+				vertical-align: middle; 
+				position: absolute;
+				top: 5px;
+				right: 0;
+			}
+			transition: all 0.3s;
+
+		}
+		&:hover{
+			background: #d4cfcf; 
+		}
+	}
+
+}
