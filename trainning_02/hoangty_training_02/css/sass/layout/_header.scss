@@ -1,0 +1,97 @@
+/*======================================
+        Header
+======================================*/
+
+#header{
+	@extend %clearfix;
+}
+.header-top{
+	padding: 10px 0 9px 0;
+	background: $color-primary;
+}
+.contact-social{
+	@extend %clearfix;
+	color: #fff;
+	ul{	
+		float: left;
+		@extend %clearfix;
+		li{
+			float: left;
+			a{
+				font-size: 13px;
+				line-height: 1.2;
+			}
+		}
+	}
+}
+.contact-us{
+	@extend %clearfix;
+	float: left;
+	li{
+		margin-right: 40px;
+		span{
+			margin-right: 7px;
+		}
+	}
+}
+.box_social{
+	@extend %clearfix;
+	float: left; 
+	li{
+		margin-left: 7px;
+		width: 22px;
+		height: 22px;
+		border-radius: 50%;
+		text-align: center;
+		padding: 4px 5px;
+		&:first-child{
+			background: #305097;
+		}
+		&:last-child{
+			background: #4099ff;
+		}
+		
+	}
+}
+
+.header-bot {
+	background: #000; 
+	color: #fff; 
+}
+.logo {
+	padding: 9px 0;
+}
+.menu {
+	ul {
+		margin: 18px -40px 0 -40px;
+		li {
+			float: left;
+			margin: 0 40px;
+			a {
+				display: inline-block;
+				position: relative;
+				padding: 17px 0px;
+				color: #fff; 
+				font-weight: 700;
+				font-size: 15px;
+				line-height: 1.2;
+				&:after{
+					content: '';
+					display: block;
+					width: 0px;
+					height: 2px;
+					background: #fff;
+					position: absolute;
+					bottom: 10px;
+					left: 0;
+					transition: all 0.3s;
+				}
+			}
+			&:hover, &.active{
+				a:after{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

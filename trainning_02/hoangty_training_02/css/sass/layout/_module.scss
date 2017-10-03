@@ -1,0 +1,43 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import "http://fonts.googleapis.com/earlyaccess/notosansjapanese.css";
+
+/*------------------- Wraper -------------------*/
+.wrapper {
+    min-width: 1100px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+.row_clear {
+    @extend %clearfix;
+}
+.container {
+    @extend %clearfix;
+    width: 1100px;
+    margin: 0 auto;
+}
+.image-center {
+    text-align: center;
+}
+
+.pull-right{
+	float: right !important;
+}
+.pull-left{
+	float: left !important;
+}
+
+.title-h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: 700;
+    line-height: 46px;
+    font-family: 'Time';
+    span {
+        font-size: 14px;
+        display: block;
+        font-weight: 400;
+        line-height: 24px;
+        
+    }
+}
