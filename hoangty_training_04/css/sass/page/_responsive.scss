@@ -1,0 +1,150 @@
+/*-----------------------
+        Responsive for device < 1200px
+-----------------------------------------*/
+@media screen and (max-width: 1000px) {
+	.container-fluid{
+		padding: 0 15px;
+	}
+
+}
+/*-----------------------
+        Responsive for device < 450px
+-----------------------------------------*/
+@media screen and (max-width: 450px) {
+	.wrapper {
+		min-width: 100%;
+	}
+	.th-menu {
+		.menu-mobile{
+			display: block;
+
+		}
+		ul{
+			display: none;
+			
+		}
+	}
+	.home_01{
+		height: 380px;
+	}
+	.home_05{
+		padding: 40px 0 30px 0;
+		h4{
+			margin-bottom: 20px;
+		}
+		a{
+			font-size: 11px;
+			line-height: 30px;
+		}
+	}
+	.title-h2{
+		padding: 40px 0 30px 0;
+		img{
+			width: percentage(160px / $screen);
+		}
+	}
+	.logo{
+		width: percentage(420px / $screen);
+		padding: percentage(22px / $screen) 0;
+	}
+
+	.lst-service{
+		li{
+			width: 50%;
+			border: 0;
+		}
+	}
+	.item-ser{
+		h3{
+			font-size: 14px;
+			line-height: 15px;
+			height: 40px;
+		}
+		.btn-read-more{
+			font-size: 10px;
+			margin: 10px 0;
+		}
+	}
+
+	.question-answer{
+		padding: 20px 0;
+		ul{
+			padding: 13px 13px 13px 13px;
+			h3{
+				font-size: 13px;
+				cursor: pointer;
+				border-bottom: 1px solid #000;
+				padding-left: 40px;
+				padding: 10px 30px;
+				&:before{
+					left: 0;
+					width: 20px;
+					height: 20px;
+					background-size: cover;
+					top: 17px;
+				}
+				&:after{
+					display: block;
+				}
+				&.active{
+					margin-bottom: 8px;
+				}
+			}
+			li{
+				margin-bottom: 0;
+			}
+			.cont-answer{
+				overflow: hidden;
+				p{
+					font-size: 10px;
+				}
+				padding: 13px 15px;
+				img{
+					width: 100px;
+					margin-left: 0;
+				}
+				&:before{
+					content: none; 
+				}
+			}
+		}
+	}
+	#footer{
+		padding: 20px 0;
+		text-align: center;
+	}
+	.footer-logo{
+		width: 100%;
+		padding: 0 30px;
+	}
+	.copyright{
+		width: 100%;
+		text-align: center;
+		margin-top: 25px;
+		padding: 0 30px;
+		p {
+			font-size: 10px;
+		}
+	}
+
+	.title-intro{
+		padding: 0;
+	}
+ 
+	
+	.item-ser{
+		padding: 0 10px;
+	} 
+	.title-intro p{
+		font-size: 12px;
+	}
+}
+
+/*-----------------------
+        Responsive for device < 500px
+-----------------------------------------*/
+@media screen and (max-width: 500px) {
+	
+	//
+
+}

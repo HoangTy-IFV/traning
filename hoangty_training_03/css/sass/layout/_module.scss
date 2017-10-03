@@ -1,0 +1,66 @@
+/*------------------- Wraper -------------------*/
+.wrapper {
+	position: relative;
+	left: 0;
+	width: 100%;
+	transition: all 0.3s;
+    &.menu-open{
+		left: -250px;
+    }
+}
+.row_clear {
+    @extend %clearfix;
+}
+.container {
+    @extend %clearfix;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-fluid{
+	@extend %clearfix;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.image-center {
+    text-align: center;
+}
+
+
+.title-h2{
+	text-align: center;
+	margin-bottom: 35px;
+	h2{
+		&:before{
+			content: '';
+			display: block;
+			width: 110px;
+			height: 55px;
+			margin: 0 auto 25px auto;
+		}
+	}
+	&.title-2{
+		h2{
+			&:before{
+			content: none;
+			}
+		}
+	}
+	&.title-o{
+		h2{
+			&:before{
+				background: url('../images/title-o.png') no-repeat;
+			}
+		}
+	}
+	&.title-1{
+		h2{
+			&:before{
+				background: url('../images/title-1.png') no-repeat;
+			}
+		}
+	}
+}
+
